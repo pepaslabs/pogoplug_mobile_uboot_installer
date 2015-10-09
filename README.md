@@ -5,8 +5,8 @@ A script which installs uboot onto a Pogoplug Mobile (allowing you to boot Linux
 
 ```
 cd /tmp
-wget http://pepas.com/pogo.sh
-ash pogo.sh
+wget http://pepas.com/pogo/uboot.sh
+ash uboot.sh
 ```
 
 ## Unlock the cheapest Linux server on the planet!
@@ -88,8 +88,8 @@ Host is up (0.017s latency).
 
    ```
 cd /tmp
-wget http://pepas.com/pogoplug_mobile_uboot_installer.sh
-ash pogoplug_mobile_uboot_installer.sh
+wget http://pepas.com/pogo/uboot.sh
+ash uboot.sh
 ```
 
    Here's what the script does (have a look: http://git.io/vCtIl):
