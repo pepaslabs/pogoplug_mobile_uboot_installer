@@ -3,16 +3,20 @@ A script which installs uboot onto a Pogoplug Mobile (allowing you to boot Linux
 
 ## Unlock the cheapest Linux server on the planet!
 
-Meet the Pogoplug Mobile (POGO-V4-A1-01), a $10 Linux server:
+Meet the Pogoplug Mobile (POGO-V4-A1-01), a **$10 Linux server**:
+
+![](https://raw.githubusercontent.com/pepaslabs/pogoplug_mobile_uboot_installer/master/.github_media/Pogoplug.jpg)
 
 ### What you get for ten bucks:
 
+![](https://raw.githubusercontent.com/pepaslabs/pogoplug_mobile_uboot_installer/master/.github_media/Pogoplug_Mobile_Rear.jpg)
+
 * 800MHz ARMv5TE processor
 * 128MB of RAM
-* 128MB of flash
 * an Ethernet port
 * a USB 2.0 slot
 * an SD card slot
+* 128MB of built-in flash
 
 Also included with the Pogoplug:
 * 12V/1A power adapter
