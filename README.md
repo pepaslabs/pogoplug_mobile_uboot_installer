@@ -105,13 +105,13 @@ ash uboot.sh
    * Reboot the Pogoplug
      * (it will prompt you for permission to do this)
 
-After rebooting, you will be able to do the following:
+**After rebooting, your Pogoplug will be able to do the following:**
 * Boot the stock Pogoplug OS
   * (just disconnect any USB drive and SD card and turn it on)
 * Boot your Linux distro of choice from USB or SD card
   * (uboot expects a bootable ext3 partition labelled 'rootfs')
 
-Note: If you are rebooting back into the stock Pogoplug Linux install, don't freak out when you can't ssh into it anymore.  You have to run that `curl` command again every time it boots into its stock OS.
+**Note:** If you are rebooting back into the stock Pogoplug Linux install, don't freak out when you can't ssh into it anymore.  You have to run that `curl` command again every time it boots into its stock OS.
 
 ## Credits
 
