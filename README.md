@@ -7,7 +7,7 @@ A script which installs uboot onto a Pogoplug Mobile (allowing you to boot Linux
 
 ## Unlock the cheapest Linux server on the planet!
 
-Meet the **Pogoplug Mobile** (POGO-V4-A1-01), a **[$10 Linux server](ref=sr_1_1?ie=UTF8&qid=1444365806&sr=8-1&keywords=pogoplug+mobile)**:
+Meet the **Pogoplug Mobile** (POGO-V4-A1-01), a **[$10 Linux server](http://www.amazon.com/Pogoplug-Backup-Sharing-Discontinued-Manufacturer/dp/B005GM1Q1O)**:
 
 ![](https://raw.githubusercontent.com/pepaslabs/pogoplug_mobile_uboot_installer/master/.github_media/Pogoplug.jpg)
 
@@ -28,7 +28,7 @@ Also included with the Pogoplug:
 
 ## Running the script
 
-So, you ordered a Pogoplug Mobile from [amazon.com](ref=sr_1_1?ie=UTF8&qid=1444365806&sr=8-1&keywords=pogoplug+mobile) and it just arrived.  Here's what you do:
+So, you ordered a Pogoplug Mobile from [amazon.com](http://www.amazon.com/Pogoplug-Backup-Sharing-Discontinued-Manufacturer/dp/B005GM1Q1O) and it just arrived.  Here's what you do:
 
 1. **Plug it into your local network** and turn it on (connect the power supply).
 
