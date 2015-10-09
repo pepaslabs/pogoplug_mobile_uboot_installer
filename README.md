@@ -119,4 +119,10 @@ Qui's work was in turn based on work from the crew at the doozan forums: http://
 
 **Q: Why aren't you using a github URL in the above instructions?**
 
-A: It turns out the version of wget (busybox) which ships with the Pogoplug doesn't do HTTPS at all, and github now forces all HTTP traffic onto HTTPS.
+A: It turns out the version of wget (busybox) which ships with the Pogoplug doesn't do HTTPS at all, and github now forces all HTTP traffic onto HTTPS, which causes wget to fail like so:
+
+```
+# wget -O - http://git.io/vCtIl
+Connecting to git.io (54.225.117.235:80)
+wget: not an http or ftp url: https://raw.githubusercontent.com/pepaslabs/pogoplug_mobile_uboot_installer/master/pogoplug_mobile_uboot_installer.sh
+```
