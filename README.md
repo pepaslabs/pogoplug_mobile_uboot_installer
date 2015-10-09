@@ -130,3 +130,13 @@ A: It turns out the version of wget (busybox) which ships with the Pogoplug does
 Connecting to git.io (54.225.117.235:80)
 wget: not an http or ftp url: https://raw.githubusercontent.com/pepaslabs/pogoplug_mobile_uboot_installer/master/pogoplug_mobile_uboot_installer.sh
 ```
+
+**Q: I'd like to verify the contents of the script before running it.**
+
+A: Run this:
+
+```
+md5sum -c - << EOF
+c583afbc0e503b77db2eba3ad927b345  uboot.sh
+EOF
+```
