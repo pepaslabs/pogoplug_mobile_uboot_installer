@@ -3,7 +3,7 @@ A script which installs uboot onto a Pogoplug Mobile (allowing you to boot Linux
 
 ## TL;DR:
 
-`wget -O - http://git.io/vCtIl | ash`
+`wget -O - http://pepas.com/pogo.sh | ash`
 
 ## Unlock the cheapest Linux server on the planet!
 
@@ -84,8 +84,8 @@ Host is up (0.017s latency).
 
    ```
 cd /tmp
-wget -O install.sh http://git.io/vCtIl
-ash install.sh
+wget http://pepas.com/pogoplug_mobile_uboot_installer.sh
+ash pogoplug_mobile_uboot_installer.sh
 ```
 
    Here's what the script does (have a look: http://git.io/vCtIl):
@@ -114,3 +114,9 @@ Note: If you are rebooting back into the stock Pogoplug Linux install, don't fre
 This script is based on the instructions in Qui's blog post: http://blog.qnology.com/2014/07/hacking-pogoplug-v4-series-4-and-mobile.html
 
 Qui's work was in turn based on work from the crew at the doozan forums: http://forum.doozan.com/
+
+## FAQ
+
+**Q: Why aren't you using a github URL in the above instructions?**
+
+A: It turns out the version of wget (busybox) which ships with the Pogoplug doesn't do HTTPS at all, and github now forces all HTTP traffic onto HTTPS.
