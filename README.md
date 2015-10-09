@@ -34,7 +34,7 @@ Here's what you do:
 
 1. **Plug it into your local network** and turn it on (connect the power supply).
 
-   The Pogoplug will boot a busybox-based Linux install and try to grab a DHCP address.
+   The Pogoplug will boot its busybox-based Linux install and try to grab a DHCP address.
 
 2. **Figure out what IP address it got** from DHCP.
 
@@ -44,7 +44,7 @@ Here's what you do:
    
    `nmap -sn 192.168.2.*`
    
-   The Pogoplug will try to inform your DHCP server that it's hostname is `PogoplugMobile`, so you should see something like this in the output of `nmap`:
+   The Pogoplug will try to inform your DHCP server that its hostname is `PogoplugMobile`, so you should see something like this in the output of `nmap`:
    
    ```
 Starting Nmap 6.47 ( http://nmap.org ) at 2015-10-07 21:01 CDT
