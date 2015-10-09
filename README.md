@@ -28,7 +28,9 @@ Also included with the Pogoplug:
 
 ## Running the script
 
-So, you ordered a Pogoplug Mobile from [amazon.com](http://www.amazon.com/Pogoplug-Backup-Sharing-Discontinued-Manufacturer/dp/B005GM1Q1O) and it just arrived.  Here's what you do:
+So, you ordered a Pogoplug Mobile from [amazon.com](http://www.amazon.com/Pogoplug-Backup-Sharing-Discontinued-Manufacturer/dp/B005GM1Q1O) and it just arrived.
+
+Here's what you do:
 
 1. **Plug it into your local network** and turn it on (connect the power supply).
 
