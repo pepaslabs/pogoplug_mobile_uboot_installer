@@ -89,7 +89,8 @@ ash install.sh
 ```
 
    Here's what the script does (have a look: http://git.io/vCtIl):
-   * Prompt you to verify the Pogoplug's MAC address (which is on a sticker on the underside of your Pogoplug)
+   * Prompt you to verify the Pogoplug's MAC address
+     * (it is printed on a sticker on the underside of your Pogoplug)
    * Download some flash utility binaries
    * Download some uboot binary blobs
    * Burn uboot into flash
@@ -98,7 +99,7 @@ ash install.sh
      * (it will prompt you for permission to do this)
    * Tweak a bunch of firmware settings in the flash
    * Reboot the Pogoplug
-     * (it will prompt you before doing this)
+     * (it will prompt you for permission to do this)
 
 After rebooting, you will be able to do the following:
 * Boot the stock Pogoplug OS
@@ -106,6 +107,7 @@ After rebooting, you will be able to do the following:
 * Boot your Linux distro of choice from USB or SD card
   * (uboot expects a bootable ext3 partition labelled 'rootfs')
 
+Note: If you are rebooting back into the stock Pogoplug Linux install, don't freak out when you can't ssh into it anymore.  You have to run that `curl` command again every time it boots into its stock OS.
 
 ## Credits
 
