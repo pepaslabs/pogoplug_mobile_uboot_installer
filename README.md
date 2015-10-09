@@ -3,7 +3,11 @@ A script which installs uboot onto a Pogoplug Mobile (allowing you to boot Linux
 
 ## TL;DR:
 
-`wget -O - http://pepas.com/pogo.sh | ash`
+```
+cd /tmp
+wget http://pepas.com/pogo.sh
+ash pogo.sh
+```
 
 ## Unlock the cheapest Linux server on the planet!
 
