@@ -17,9 +17,9 @@ Meet the **Pogoplug Mobile** (POGO-V4-A1-01), a **[$10 Linux server](http://www.
 
 * **800**MHz **ARM**v5TE processor
 * **128**MB of **RAM**
-* an Ethernet port
-* a USB 2.0 slot
-* an SD card slot
+* an **Ethernet** port
+* a **USB** 2.0 slot
+* an **SD** card slot
 * 128MB of built-in flash
 
 Also included with the Pogoplug:
