@@ -148,6 +148,7 @@ export PATH=/tmp/bin:${PATH}
 # download flash utils
 cd /tmp/bin
 baseurl="http://download.qnology.com/pogoplug/v4"
+#baseurl="http://pepas.com/pogo/mirrored/download.qnology.com/pogoplug/v4"
 wget_step nanddump ${baseurl} 770bbbbe4292747aa8f2163bb1e677bb
 wget_step nandwrite ${baseurl} 47974246185ee52deae7cc6cfea5e8fc
 wget_step flash_erase ${baseurl} 8b5f9961376281e30a1bd519353484b0
@@ -157,12 +158,14 @@ wget_step fw_setenv ${baseurl} 7d28314b0d2737094e57632a6fe43bbe
 # download uboot and uboot env settings
 cd /tmp/cache
 baseurl="http://download.qnology.com/pogoplug/v4"
+#baseurl="http://pepas.com/pogo/mirrored/download.qnology.com/pogoplug/v4"
 wget_step uboot.2014.07-tld-1.pogo_v4.bodhi.tar ${baseurl} d4b497dc5239844fd2d45f4ca83132e0
 wget_step uboot.2014.07-tld-1.environment.img.bodhi.tar ${baseurl} c5921e3ea0a07a859878339ffb771088
 
 # download original uboot for boot chaining
 cd /tmp/cache
 baseurl="http://download.doozan.com/uboot/files/uboot"
+#baseurl="http://pepas.com/pogo/mirrored/download.doozan.com/uboot/files/uboot"
 wget_step uboot.mtd0.dockstar.original.kwb ${baseurl} b2d9681ef044e9ab6b058ef442b30b6e
 
 echo_step "Extracting uboot"
