@@ -32,10 +32,10 @@ prompt_to_proceed()
 {
     local message="$1"
 
-    read -p "${message} [y/n]: " yn
+    read -p "${message} [Y/n]: " yn
     case $yn in
-        [Yy]* ) echo "Proceeding..." ; break;;
-        * ) echo2 "Exiting..." ; exit 1;;
+        y|Y|'') echo "Proceeding..." ;;
+        * ) echo2 "Exiting..." ; exit 1 ;;
     esac
     # thanks to http://stackoverflow.com/a/226724
 }
