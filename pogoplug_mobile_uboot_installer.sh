@@ -298,5 +298,5 @@ fw_setenv_if_needed bootcmd 'run bootcmd_mmc; run bootcmd_usb; run bootcmd_sata;
 sync
 
 echo
-prompt_to_proceed "Ready to reboot.  Proceed?"
-/sbin/reboot
+prompt_to_proceed "Ready to poweroff.  Proceed?"
+/sbin/poweroff
