@@ -149,8 +149,8 @@ EOF
 
 ### 2015/10/22
 
-* Verified the script also works with the Pogoplug Series 4 (model POGO-V4-A3-01).
+* Verified the script also works with the **Pogoplug Series 4** (model **POGO-V4-A3-01**).
 
 ### 2015/10/8
 
-* Initial version of script.  Verified to work the Pogoplug Mobile (models POGO-V4-A1-01 and POGO-V4-A1-05).
+* Initial version of script.  Verified to work the **Pogoplug Mobile** (models **POGO-V4-A1-01** and **POGO-V4-A1-05**).
