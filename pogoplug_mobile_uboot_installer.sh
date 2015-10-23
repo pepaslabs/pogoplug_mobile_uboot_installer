@@ -64,19 +64,19 @@ cd /tmp
 
 echo_step "Sanity-checking the stock Pogoplug Linux install"
 
-if md5sum -c - << EOF
+if echo_step "Checking if this is a Pogoplug Mobile" && md5sum -c - << EOF
 0ddfeeeee0d4587dce713895aeb41a7b  /proc/version
 818eaefe5af1c1ccdf6eeb343152a983  /bin/busybox
 EOF
 then
-    # this is a Pogoplug Mobile
+    echo_step "Yes, this is a Pogoplug Mobile.  Proceeding..."
     pogolinux_is_sane=1
-elif md5sum -c - << EOF
+elif echo_step "Checking if this is a Pogoplug Series 4" && md5sum -c - << EOF
 0a29e327ff36b0a4fbd42503f08bb6e2  /proc/version
 c1a44b8d7ce20b42a2667b202fe10f36  /bin/busybox
 EOF
 then
-    # this is a Pogoplug Series 4
+    echo_step "Yes, this is a Pogoplug Series 4.  Proceeding..."
     pogolinux_is_sane=1
 else
     # unrecognized Pogoplug Linux installation.
