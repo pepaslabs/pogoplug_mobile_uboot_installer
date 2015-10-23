@@ -1,5 +1,5 @@
 # pogoplug_mobile_uboot_installer
-A script which installs uboot onto a Pogoplug Mobile (allowing you to boot Linux from USB / SD card).
+A script which installs uboot onto a **Pogoplug Mobile** or **Pogoplug Series 4** (allowing you to boot Linux from USB / SD card).
 
 ## TL;DR:
 
