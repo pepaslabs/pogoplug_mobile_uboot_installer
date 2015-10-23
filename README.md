@@ -11,7 +11,7 @@ ash uboot.sh
 
 ## Unlock the cheapest Linux server on the planet!
 
-Meet the **Pogoplug Mobile** (POGO-V4-A1-01), a **[$10 Linux server](http://www.amazon.com/Pogoplug-Backup-Sharing-Discontinued-Manufacturer/dp/B005GM1Q1O)**:
+Meet the **Pogoplug Mobile**, a **[$10 Linux server](http://www.amazon.com/Pogoplug-Backup-Sharing-Discontinued-Manufacturer/dp/B005GM1Q1O)**:
 
 ![](https://raw.githubusercontent.com/pepaslabs/pogoplug_mobile_uboot_installer/master/.github_media/Pogoplug.jpg)
 
@@ -30,7 +30,7 @@ Also included with the Pogoplug:
 * 12V/1A power adapter
 * 3 foot ethernet cable
 
-**UPDATE:** I have verified this script also works with the Pogoplug Series 4.  Twice the price, with the addition of a SATA port and two addition USB ports (and a 12V/2A power adapter).
+**UPDATE:** I have verified this script also works with the **[Pogoplug Series 4](http://www.amazon.com/Pogoplug-Series-4-Backup-Device/dp/B006I5MKZY)**.  Twice the price, with the addition of a SATA port and two addition USB ports (and a 12V/2A power adapter).
 
 ## Running the script
 
@@ -149,8 +149,8 @@ EOF
 
 ### 2015/10/22
 
-* Verified the script also works with the Pogoplug Series 4.
+* Verified the script also works with the Pogoplug Series 4 (model POGO-V4-A3-01).
 
 ### 2015/10/8
 
-* Initial version of script (for the Pogoplug Mobile).
+* Initial version of script.  Verified to work the Pogoplug Mobile (models POGO-V4-A1-01 and POGO-V4-A1-05).
