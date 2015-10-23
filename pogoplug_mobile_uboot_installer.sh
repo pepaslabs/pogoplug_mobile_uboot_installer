@@ -92,7 +92,7 @@ then
         echo2
         echo2 "e.g.:"
         echo2 "export BRICK_MY_POGO=1"
-        echo2 "./pogoplug_mobile_uboot_installer.sh"
+        echo2 "ash pogoplug_mobile_uboot_installer.sh"
         echo2
         echo2 "Exiting..."
         exit 1
