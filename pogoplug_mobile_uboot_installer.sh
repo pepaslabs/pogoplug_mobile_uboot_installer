@@ -15,6 +15,15 @@
 # see http://forum.doozan.com/
 
 
+# parse command line args:
+
+assume_yes=0
+if [ "${1:-}" == "-y" ]
+then
+    assume_yes=1
+fi
+
+
 ### functions
 
 echo_step()
@@ -32,10 +41,18 @@ prompt_to_proceed()
 {
     local message="$1"
 
-    read -p "${message} [Y/n]: " yn
+    echo -n "${message} [Y/n]: "
+    
+    if [ "${assume_yes}" -eq 1 ]
+    then
+        echo "(Assuming yes...)"
+        return 0
+    fi
+    
+    read yn
     case $yn in
-        y|Y|'') echo "Proceeding..." ;;
-        * ) echo2 "Exiting..." ; exit 1 ;;
+        y|Y|yes|Yes|YES|'') echo "Proceeding..." ;;
+        *) echo2 "Exiting..." ; exit 1 ;;
     esac
     # thanks to http://stackoverflow.com/a/226724
 }
