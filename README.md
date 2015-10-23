@@ -142,3 +142,13 @@ md5sum -c - << EOF
 c583afbc0e503b77db2eba3ad927b345  uboot.sh
 EOF
 ```
+
+## Changelog
+
+### 2015/10/22
+
+* Verified the script also works with the Pogoplug Series 4.
+
+### 2015/10/8
+
+* Initial version of script (for the Pogoplug Mobile).
