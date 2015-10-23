@@ -91,7 +91,7 @@ set -o pipefail
 # verbose
 #set -x
 
-if ps | grep hbwd
+if ps | grep -q hbwd
 then
     echo_step "Stopping my.pogoplug.com service (hbwd)"
     killall hbwd || true
