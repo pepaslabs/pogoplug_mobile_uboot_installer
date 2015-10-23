@@ -102,7 +102,7 @@ ash uboot.sh
    * Burn uboot's default settings into flash
      * (it will prompt you for permission to do this)
    * Tweak a bunch of firmware settings in the flash
-   * Reboot the Pogoplug
+   * `poweroff` the Pogoplug
      * (it will prompt you for permission to do this)
 
 **After rebooting, your Pogoplug will be able to do the following:**
@@ -112,6 +112,8 @@ ash uboot.sh
   * (uboot expects a bootable ext3 partition labelled 'rootfs')
 
 **Note:** If you are rebooting back into the stock Pogoplug Linux install, don't freak out when you can't ssh into it anymore.  You have to run that `curl` command again every time it boots into its stock OS.
+
+**Note:** If you are running this script on several Pogoplugs and get tired of answering all of the prompts, you can instead tell the script to assume yes to all prompts via `ash uboot.sh -y`.
 
 ## Credits
 
