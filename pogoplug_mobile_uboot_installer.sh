@@ -62,18 +62,32 @@ prompt_to_proceed()
 
 cd /tmp
 
-echo_step "Sanity-checking the stock pogoplug linux install"
-md5sum -c - << EOF
+echo_step "Sanity-checking the stock Pogoplug Linux install"
+
+if md5sum -c - << EOF
 0ddfeeeee0d4587dce713895aeb41a7b  /proc/version
 818eaefe5af1c1ccdf6eeb343152a983  /bin/busybox
 EOF
-pogolinux_is_sane=$?
+then
+    # this is a Pogoplug Mobile
+    pogolinux_is_sane=1
+elif md5sum -c - << EOF
+0a29e327ff36b0a4fbd42503f08bb6e2  /proc/version
+c1a44b8d7ce20b42a2667b202fe10f36  /bin/busybox
+EOF
+then
+    # this is a Pogoplug Series 4
+    pogolinux_is_sane=1
+else
+    # unrecognized Pogoplug Linux installation.
+    pogolinux_is_sane=0
+fi
 
-if [ $pogolinux_is_sane -ne 0 ]
+if [ $pogolinux_is_sane -eq 0 ]
 then
     echo2
     echo2 "ERROR: The MD5 sums of your /bin/busybox or /proc/version don't match what"
-    echo2 "shipped with my pogoplug.  I'm guessing that means you aren't booted into"
+    echo2 "shipped with my pogoplug(s).  I'm guessing that means you aren't booted into"
     echo2 "the stock Linux distro which shipped with the pogoplug mobile (e.g. you are"
     echo2 "trying to run this script from a Debian or Arch Linux install).  This script"
     echo2 "was written assuming you are running the stock distro, so it isn't safe for"
