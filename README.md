@@ -5,7 +5,7 @@ A script which installs uboot onto a Pogoplug Mobile (allowing you to boot Linux
 
 ```
 cd /tmp
-wget http://pepas.com/pogo/uboot.sh
+wget http://ssl.pepas.com/pogo/uboot.sh
 ash uboot.sh
 ```
 
@@ -88,7 +88,7 @@ Host is up (0.017s latency).
 
    ```
 cd /tmp
-wget http://pepas.com/pogo/uboot.sh
+wget http://ssl.pepas.com/pogo/uboot.sh
 ash uboot.sh
 ```
 
