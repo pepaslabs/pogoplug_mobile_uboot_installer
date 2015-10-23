@@ -30,6 +30,8 @@ Also included with the Pogoplug:
 * 12V/1A power adapter
 * 3 foot ethernet cable
 
+**UPDATE:** I have verified this script also works with the Pogoplug Series 4.  Twice the price, with the addition of a SATA port and two addition USB ports (and a 12V/2A power adapter).
+
 ## Running the script
 
 So, you ordered a Pogoplug Mobile from [amazon.com](http://www.amazon.com/Pogoplug-Backup-Sharing-Discontinued-Manufacturer/dp/B005GM1Q1O) and it just arrived.
