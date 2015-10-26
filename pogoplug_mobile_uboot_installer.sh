@@ -310,17 +310,13 @@ fw_setenv_if_needed usb_rootfstype ext3
 # Setting to original mtd partition layout
 fw_setenv_if_needed mtdparts 'mtdparts=orion_nand:2M(u-boot),3M(uImage),3M(uImage2),8M(failsafe),112M(root)'
 
-# Updating boot order to include pogoplug OS
-fw_setenv_if_needed bootcmd 'run bootcmd_usb; run bootcmd_mmc; run bootcmd_sata; run bootcmd_pogo; reset'
-
 # Setting up chain loading (using original uboot)
 cd /
 rm -f uboot.mtd0.dockstar.original.kwb
 cp /tmp/cache/uboot.mtd0.dockstar.original.kwb /
 fw_setenv_if_needed bootcmd_pogo 'if ubi part root 2048 && ubifsmount ubi:rootfs && ubifsload 0x800000 uboot.mtd0.dockstar.original.kwb ; then go 0x800200; fi'
 
-# Making SD card the first boot device
-# (Default boot order was USB->MMC/SD->SATA->POGO_OS)
+# boot order: SD, USB, SATA, NAND
 fw_setenv_if_needed bootcmd 'run bootcmd_mmc; run bootcmd_usb; run bootcmd_sata; run bootcmd_pogo; reset'
 
 
