@@ -154,3 +154,11 @@ EOF
 ### 2015/10/8
 
 * Initial version of script.  Verified to work the **Pogoplug Mobile** (models **POGO-V4-A1-01** and **POGO-V4-A1-05**).
+
+
+## Related resources:
+
+You may also be interested in my other Pogoplug github projects:
+
+* [pogoplug-v4-bodhi-rootfs-debian](https://github.com/pepaslabs/pogoplug-v4-bodhi-rootfs-debian)
+* [pogoplug_static_binaries](https://github.com/pepaslabs/pogoplug_static_binaries)
