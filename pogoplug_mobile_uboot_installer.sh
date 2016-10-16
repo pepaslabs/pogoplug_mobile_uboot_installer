@@ -178,8 +178,9 @@ export PATH=/tmp/bin:${PATH}
 
 # download flash utils
 cd /tmp/bin
-baseurl="http://download.qnology.com/pogoplug/v4"
-#baseurl="http://ssl.pepas.com/pogo/mirrored/download.qnology.com/pogoplug/v4"
+#baseurl="http://download.qnology.com/pogoplug/v4"
+# Note: download.qnology.com seems to be down.  Falling back to mirrored files:
+baseurl="http://ssl.pepas.com/pogo/mirrored/download.qnology.com/pogoplug/v4"
 wget_step nanddump ${baseurl} 770bbbbe4292747aa8f2163bb1e677bb
 wget_step nandwrite ${baseurl} 47974246185ee52deae7cc6cfea5e8fc
 wget_step flash_erase ${baseurl} 8b5f9961376281e30a1bd519353484b0
@@ -188,8 +189,9 @@ wget_step fw_setenv ${baseurl} 7d28314b0d2737094e57632a6fe43bbe
 
 # download uboot and uboot env settings
 cd /tmp/cache
-baseurl="http://download.qnology.com/pogoplug/v4"
-#baseurl="http://ssl.pepas.com/pogo/mirrored/download.qnology.com/pogoplug/v4"
+#baseurl="http://download.qnology.com/pogoplug/v4"
+# Note: download.qnology.com seems to be down.  Falling back to mirrored files:
+baseurl="http://ssl.pepas.com/pogo/mirrored/download.qnology.com/pogoplug/v4"
 wget_step uboot.2014.07-tld-1.pogo_v4.bodhi.tar ${baseurl} d4b497dc5239844fd2d45f4ca83132e0
 wget_step uboot.2014.07-tld-1.environment.img.bodhi.tar ${baseurl} c5921e3ea0a07a859878339ffb771088
 
@@ -215,7 +217,7 @@ md5_step uboot.2014.07-tld-1.environment.img 0069d3706d3c8a4a0c83ab118eaa0cb5
 ### uboot section
 
 echo_step "Remounting '/' as read/write"
-#by default the Pogoplug OS (internal flash) is read only
+# by default the Pogoplug OS (internal flash) is read only
 mount -o remount,rw /
 
 mtd0_md5sum_is_valid()
