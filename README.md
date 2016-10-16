@@ -141,7 +141,7 @@ A: Run this:
 
 ```
 md5sum -c - << EOF
-c583afbc0e503b77db2eba3ad927b345  uboot.sh
+27fe40cf074bf1763bd8006407106b70  uboot.sh
 EOF
 ```
 
