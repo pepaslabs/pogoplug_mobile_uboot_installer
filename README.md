@@ -40,19 +40,19 @@ Here's what you do:
 
 1. **Plug it into your local network** and turn it on (connect the power supply).
 
-   The Pogoplug will boot its busybox-based Linux install and try to grab a DHCP address.
+The Pogoplug will boot its busybox-based Linux install and try to grab a DHCP address.
 
 2. **Figure out what IP address it got** from DHCP.
 
-   If you run your own DHCP server, check your logs.
+If you run your own DHCP server, check your logs.
    
-   If DHCP is managed by your wifi router, use `nmap`:
+If DHCP is managed by your wifi router, use `nmap`:
    
-   `nmap -sn 192.168.2.*`
+`nmap -sn 192.168.2.*`
    
-   The Pogoplug will try to inform your DHCP server that its hostname is `PogoplugMobile`, so you should see something like this in the output of `nmap`:
+The Pogoplug will try to inform your DHCP server that its hostname is `PogoplugMobile`, so you should see something like this in the output of `nmap`:
    
-   ```
+```
 Starting Nmap 6.47 ( http://nmap.org ) at 2015-10-07 21:01 CDT
 ...
 Nmap scan report for PogoplugMobile.localnet (192.168.2.204)
@@ -62,50 +62,50 @@ Host is up (0.017s latency).
 
 3. **Start SSH** on the Pogoplug
 
-   The Pogoplug's stock busybox-based Linux distro ships with the dropbear SSH daemon installed, but it isn't running by default.  Luckily, you can start it by sending an HTTP POST to the Pogoplug's web interface.
+The Pogoplug's stock busybox-based Linux distro ships with the dropbear SSH daemon installed, but it isn't running by default.  Luckily, you can start it by sending an HTTP POST to the Pogoplug's web interface.
    
-   If your local network supports resolving the Pogoplug's default hostname of `PogoplugMobile`, you can run this curl command:
+If your local network supports resolving the Pogoplug's default hostname of `PogoplugMobile`, you can run this curl command:
    
-   `curl -k "https://root:ceadmin@PogoplugMobile/sqdiag/HBPlug?action=command&command=dropbear%20start"`
+`curl -k "https://root:ceadmin@PogoplugMobile/sqdiag/HBPlug?action=command&command=dropbear%20start"`
    
-   Otherwise, you'll have to stick it's IP address in there, e.g.:
+Otherwise, you'll have to stick it's IP address in there, e.g.:
    
-   `curl -k "https://root:ceadmin@192.168.2.204/sqdiag/HBPlug?action=command&command=dropbear%20start"`
+`curl -k "https://root:ceadmin@192.168.2.204/sqdiag/HBPlug?action=command&command=dropbear%20start"`
    
-   The curl command will spit out a bunch of HTML in your terminal.  That means it worked.
+The curl command will spit out a bunch of HTML in your terminal.  That means it worked.
    
 4. **SSH into the Pogoplug**
 
-   Again, if you can resolve the Pogoplug's default hostname, run this:
+Again, if you can resolve the Pogoplug's default hostname, run this:
    
-   `ssh root@PogoplugMobile`
+`ssh root@PogoplugMobile`
    
-   Otherwise, use it's IP address, e.g.:
+Otherwise, use it's IP address, e.g.:
 
-   `ssh root@192.168.2.204`
+`ssh root@192.168.2.204`
    
-   The stock root password is `ceadmin`.
+The stock root password is `ceadmin`.
    
 5. **Download and run the script**
 
-   ```
+```
 cd /tmp
 wget http://ssl.pepas.com/pogo/uboot.sh
 ash uboot.sh
 ```
 
-   Here's what the script does (have a look: http://git.io/vCtIl):
-   * Prompt you to verify the Pogoplug's MAC address
-     * (it is printed on a sticker on the underside of your Pogoplug)
-   * Download some flash utility binaries
-   * Download some uboot binary blobs
-   * Burn uboot into flash
-     * (it will prompt you for permission to do this)
-   * Burn uboot's default settings into flash
-     * (it will prompt you for permission to do this)
-   * Tweak a bunch of firmware settings in the flash
-   * `poweroff` the Pogoplug
-     * (it will prompt you for permission to do this)
+Here's what the script does (have a look: http://git.io/vCtIl):
+* Prompt you to verify the Pogoplug's MAC address
+  * (it is printed on a sticker on the underside of your Pogoplug)
+* Download some flash utility binaries
+* Download some uboot binary blobs
+* Burn uboot into flash
+  * (it will prompt you for permission to do this)
+* Burn uboot's default settings into flash
+  * (it will prompt you for permission to do this)
+* Tweak a bunch of firmware settings in the flash
+* `poweroff` the Pogoplug
+  * (it will prompt you for permission to do this)
 
 **After rebooting, your Pogoplug will be able to do the following:**
 * Boot the stock Pogoplug OS
