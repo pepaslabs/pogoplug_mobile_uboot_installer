@@ -11,7 +11,11 @@ wget http://ssl.pepas.com/pogo/uboot.sh
 ash uboot.sh
 ```
 
-UPDATE: Pogoplug, Inc. has disabled the ability to gain ssh access to pogoplugs.  This means you'll have to crack the case open and use a USB-to-serial converter to get a command-line on the pogoplug.
+**UPDATE**: Pogoplug, Inc. has disabled the ability to gain ssh access to pogoplugs.  This means you'll have to crack the case open and use a USB-to-serial converter to get a command-line on the pogoplug.
+- Connect the GND, TX, and RX pins of your USB-serial converter to the pogoplug (using solder, or just hold them in place)
+- Plug the USB-serial converter into a Linux laptop
+- On the Linux laptop, open up a terminal and run `screen /dev/ttyUSB0 115200,cs8,-parenb,-cstopb,-hupcl`
+- Boot the pogoplug
 
 ## Unlock the cheapest Linux server on the planet!
 
