@@ -3,11 +3,15 @@ A script which installs uboot onto a **Pogoplug Mobile** or **Pogoplug Series 4*
 
 ## TL;DR:
 
+From the command-line of your pogoplug:
+
 ```
 cd /tmp
 wget http://ssl.pepas.com/pogo/uboot.sh
 ash uboot.sh
 ```
+
+UPDATE: Pogoplug, Inc. has disabled the ability to gain ssh access to pogoplugs.  This means you'll have to crack the case open and use a USB-to-serial converter to get a command-line on the pogoplug.
 
 ## Unlock the cheapest Linux server on the planet!
 
