@@ -17,6 +17,9 @@ ash uboot.sh
 - On the Linux laptop, open up a terminal and run `screen /dev/ttyUSB0 115200,cs8,-parenb,-cstopb,-hupcl`
 - Boot the pogoplug
 
+For a complete walk-through of connecting via USB-to-serial converter, see https://github.com/pepaslabs/pogoplug_mobile_uboot_installer/issues/4#issuecomment-642188820
+
+
 ## Unlock the cheapest Linux server on the planet!
 
 Meet the **Pogoplug Mobile**, a **[$10 Linux server](http://www.amazon.com/Pogoplug-Backup-Sharing-Discontinued-Manufacturer/dp/B005GM1Q1O)**:
