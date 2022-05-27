@@ -197,8 +197,8 @@ wget_step uboot.2014.07-tld-1.environment.img.bodhi.tar ${baseurl} c5921e3ea0a07
 
 # download original uboot for boot chaining
 cd /tmp/cache
-baseurl="http://download.doozan.com/uboot/files/uboot"
-#baseurl="http://ssl.pepas.com/pogo/mirrored/download.doozan.com/uboot/files/uboot"
+#baseurl="http://download.doozan.com/uboot/files/uboot"
+baseurl="http://ssl.pepas.com/pogo/mirrored/download.doozan.com/uboot/files/uboot"
 wget_step uboot.mtd0.dockstar.original.kwb ${baseurl} b2d9681ef044e9ab6b058ef442b30b6e
 
 echo_step "Extracting uboot"
